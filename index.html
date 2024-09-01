@@ -1,96 +1,222 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script defer src="/_vercel/insights/script.js"></script>
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/@exampledev/new.css@1.1.2/new.min.css"
-    />
-    <title>Vercel HTML Starter</title>
-    <meta
-      name="description"
-      content="High-performance HTML based website template."
-    />
-  </head>
-  <body>
-    <h1>Vercel HTML Starter</h1>
-    <p>
-      This template is a simple, but powerful single
-      <code>index.html</code> file deployed to
-      <a href="https://vercel.com">Vercel</a>. When your site is deployed, all
-      static assets (like HTML, JavaScript, CSS, images, and more) are deployed
-      globally to every
-      <a href="https://vercel.com/docs/concepts/edge-network/overview"
-        >Vercel Edge Network</a
-      >
-      region.
-    </p>
-    <h2>Simple, privacy-friendly analytics</h2>
-    <p>
-      Want to understand your visitor traffic? Vercel Analytics gives you
-      first-party, privacy-friendly traffic analytics for your HTML site. This
-      template is already configured using the following script:
-    </p>
-    <pre><code>&lt;script defer src="/_vercel/insights/script.js"&gt;&lt;/script&gt;</code></pre>
-    <p>
-      Learn more about
-      <a href="https://vercel.com/analytics">Vercel Analytics</a>.
-    </p>
-    <h2>Integrated with git</h2>
-    <p>
-      Deploying updates to your site is as simple as
-      <code>git push</code> thanks to Vercel's advanced
-      <a href="https://vercel.com/docs/concepts/git">Git Integration</a>.
-      Support for GitHub, GitLab, Bitbucket is zero-configuration, and with the
-      flexible Vercel CLI and API, you can integrate with any tool possible.
-    </p>
-    <p>
-      Learn more about
-      <a href="https://vercel.com/docs/concepts/git">Git Integration</a>.
-    </p>
-    <h2>Fast <code>gzip</code> compression</h2>
-    <p>
-      To help ensure the smallest possible file sizes for your static assets,
-      the Vercel Edge Network compresses files by default using
-      <code>gzip</code>. You can also optionally use
-      <code>brotli</code> compressesion if you prefer.
-    </p>
-    <p>
-      Learn more about
-      <a href="https://vercel.com/docs/concepts/edge-network/compression"
-        >compression</a
-      >.
-    </p>
-    <h2>Advanced routing configuration</h2>
-    <p>
-      Vercel gives you a variety of ways to configure the routing of your
-      website. For example, adding redirects, rewrites, or headers to your page.
-      While you can use <code>vercel.json</code> to define these through JSON,
-      you can also express your routing configuration as code using
-      <a href="https://vercel.com/docs/concepts/functions/edge-middleware"
-        >Vercel Edge Middleware</a
-      >.
-    </p>
-    <p>
-      Middleware runs before the
-      <a href="https://vercel.com/docs/concepts/edge-network/caching"
-        >Vercel Edge Network Cache</a
-      >, so you can configure routing exactly as your application needs. For
-      example, this template uses <code>middleware.js</code> defined in the root
-      of the repository to add additional security headers to the site:
-    </p>
-    <pre><code>referrer-policy: origin-when-cross-origin
-strict-transport-security: max-age=31536000; includeSubDomains; preload
-x-content-type-options: nosniff
-x-dns-prefetch-control: on
-x-frame-options: DENY</code></pre>
-    <p>
-      Learn more about
-      <a href="https://vercel.com/docs/concepts/functions/edge-middleware"
-        >Vercel Edge Middleware</a
-      >.
-    </p>
-  </body>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script defer src="/_vercel/insights/script.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@exampledev/new.css@1.1.2/new.min.css" />
+  <meta name="description" content="Momentum Logistical Services" />
+  <title>Momentum Logistical Services LLC</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+      color: #333;
+      background-image: url('https://static.wixstatic.com/media/11062b_2629a680a20f465b93e0a63e6daec6d2~mv2.jpg/v1/fill/w_1960,h_1466,al_c,q_90,usm_0.66_1.00_0.01,enc_auto/11062b_2629a680a20f465b93e0a63e6daec6d2~mv2.jpg');
+    }
+
+    .navbar {
+      background-color: #007bff;
+      color: #fff;
+      padding: 15px;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .navbar h1 {
+      margin: 0;
+      font-size: 24px;
+    }
+
+    .container {
+      padding: 20px;
+      max-width: 800px;
+      margin: auto;
+      background-color: #e9ecef;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      border-radius: 8px;
+      margin-bottom: 20px;
+    }
+
+    .logo {
+      display: block;
+      margin: 20px auto;
+      width: 200px;
+      height: auto;
+    }
+
+    .content h2 {
+      text-align: center;
+      margin-bottom: 20px;
+      font-size: 28px;
+      color: #007bff;
+    }
+
+    .content p {
+      line-height: 1.6;
+      margin-bottom: 15px;
+    }
+
+    .contact-container {
+      background-color: #007bff;
+      color: #fff;
+      padding: 15px;
+      text-align: center;
+      border-radius: 8px;
+    }
+
+    .contact-container p {
+      font-size: 18px;
+      margin: 0;
+    }
+
+    .form-container {
+      padding: 20px;
+      background-color: #e9ecef;
+      border-radius: 8px;
+      max-width: 800px;
+      margin: auto;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      margin-bottom: 20px;
+    }
+
+    .form-container form {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .form-container label {
+      margin-bottom: 5px;
+      font-weight: bold;
+    }
+
+    .form-container input,
+    .form-container button {
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 16px;
+    }
+
+    .form-container input:focus,
+    .form-container button:focus {
+      border-color: #007bff;
+      outline: none;
+    }
+
+    .form-container button {
+      background-color: #007bff;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+
+    .form-container button:hover {
+      background-color: #0056b3;
+    }
+
+    .form-container p {
+      font-size: 16px;
+      color: #333;
+    }
+
+    .form-container .success-message {
+      color: #28a745;
+    }
+
+    .form-container .error-message {
+      color: #dc3545;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="navbar">
+    <h1>MOMENTUM LOGISTICAL SERVICES LLC</h1>
+  </div>
+
+  <div class="container">
+    <img
+      src="https://static.wixstatic.com/media/c3910b_00045476cbb348b9a5c0847e296f59cd~mv2.jpg/v1/fill/w_352,h_368,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/MLS-LOGO_JPG.jpg"
+      alt="Company Logo" class="logo">
+    <div class="content">
+      <h2>Welcome to Momentum Logistical Services LLC</h2>
+      <p>Your one-stop solution for all your delivery needs. We specialize in providing top-notch, reliable, and
+        efficient box truck services, dedicated to helping our clients transport goods safely and promptly.</p>
+      <p>We understand the complexities and challenges involved in the transportation of goods. We are committed
+        to delivering high-quality services to ensure that your goods reach their destination undamaged and on
+        time.</p>
+      <p>Our box trucks are well-maintained and equipped with the latest technology for tracking and
+        communication. This ensures that we can provide real-time updates on the status of your delivery and
+        promptly address any issues that may arise along the way.</p>
+      <p>We have a team of trained and experienced drivers who know how to handle a variety of goods, including
+        fragile and high-value items. Our team is fully licensed and insured, offering you peace of mind knowing
+        that your goods are in capable and secure hands.</p>
+      <p>At our Box Truck Business, we believe in offering personalized services tailored to meet the unique needs
+        of each client. We work closely with you to understand your requirements and provide a solution that
+        meets your expectations. We offer both local and long-distance services, making us the perfect choice
+        for all your delivery needs.</p>
+      <p>Thank you for considering Momentum Logistical Services LLC. We look forward to serving you and helping
+        your business grow. Contact us today to get a quote or to learn more about our services.</p>
+    </div>
+  </div>
+
+
+  <div class="form-container">
+    <h2>Contact Us</h2>
+    <form id="my-form" action="https://formspree.io/f/movaroge" method="POST">
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" placeholder="Your email" required />
+      <label for="message">Message:</label>
+      <input type="text" id="message" name="message" placeholder="Your message" required />
+      <button id="my-form-button" type="submit">Submit</button>
+      <p id="my-form-status"></p>
+    </form>
+  </div>
+
+  <script>
+    var form = document.getElementById("my-form");
+
+    async function handleSubmit(event) {
+      event.preventDefault();
+      var status = document.getElementById("my-form-status");
+      var data = new FormData(event.target);
+      fetch(event.target.action, {
+        method: form.method,
+        body: data,
+        headers: {
+          'Accept': 'application/json'
+        }
+      }).then(response => {
+        if (response.ok) {
+          status.innerHTML = "<span class='success-message'>Thanks for your submission!</span>";
+          form.reset()
+        } else {
+          response.json().then(data => {
+            if (Object.hasOwn(data, 'errors')) {
+              status.innerHTML = "<span class='error-message'>" + data["errors"].map(error => error["message"]).join(", ") + "</span>";
+            } else {
+              status.innerHTML = "<span class='error-message'>Oops! There was a problem submitting your form</span>";
+            }
+          })
+        }
+      }).catch(error => {
+        status.innerHTML = "<span class='error-message'>Oops! There was a problem submitting your form</span>";
+      });
+    }
+    form.addEventListener("submit", handleSubmit);
+  </script>
+
+
+  <div class="contact-container">
+    <p>Contact us at: <strong>dgooch218@gmail.com</strong></p>
+  </div>
+
+</body>
+
 </html>
